@@ -3,36 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhammad Sajid | SEO & WordPress Expert</title>
+<title>Muhammad Sajid | Portfolio</title>
 
 <style>
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Segoe UI, sans-serif;
 background:#0f172a;
 color:white;
-line-height:1.6;
+scroll-behavior:smooth;
 }
 
-header{
+nav{
+position:fixed;
+width:100%;
 background:#020617;
-padding:60px 20px;
+padding:15px 10%;
+display:flex;
+justify-content:space-between;
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
+background:linear-gradient(120deg,#0ea5e9,#1e293b);
 }
 
-header h1{
-margin:0;
+.hero img{
+width:180px;
+border-radius:50%;
+margin-bottom:20px;
+border:5px solid white;
+}
+
+.hero h1{
 font-size:42px;
-color:#38bdf8;
+margin:10px 0;
 }
 
-header p{
-font-size:20px;
-opacity:.8;
+.btn{
+display:inline-block;
+margin-top:15px;
+background:#38bdf8;
+padding:12px 25px;
+border-radius:8px;
+color:black;
+text-decoration:none;
+font-weight:bold;
 }
 
 section{
-padding:60px 10%;
+padding:80px 10%;
 }
 
 h2{
@@ -43,156 +75,126 @@ margin-bottom:20px;
 .card{
 background:#020617;
 padding:25px;
-border-radius:12px;
+border-radius:14px;
 margin-bottom:20px;
-box-shadow:0 0 20px rgba(0,0,0,.4);
+box-shadow:0 0 25px rgba(0,0,0,.4);
 }
 
 .skills span{
-display:inline-block;
 background:#38bdf8;
 color:black;
-padding:8px 14px;
-margin:6px;
+padding:8px 15px;
 border-radius:20px;
-font-size:14px;
+margin:6px;
+display:inline-block;
 font-weight:bold;
 }
 
-.projects a{
-display:block;
-margin:8px 0;
-color:#7dd3fc;
-text-decoration:none;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
 }
 
-.projects a:hover{
-text-decoration:underline;
+.project{
+background:#020617;
+padding:20px;
+border-radius:14px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
+}
+
+.project a{
+color:#7dd3fc;
+text-decoration:none;
+font-weight:bold;
 }
 
 footer{
 background:#020617;
 text-align:center;
 padding:30px;
-font-size:14px;
 opacity:.7;
-}
-
-button{
-background:#38bdf8;
-border:none;
-padding:12px 20px;
-font-size:16px;
-border-radius:8px;
-cursor:pointer;
-font-weight:bold;
-}
-
-button:hover{
-background:#0ea5e9;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Muhammad Sajid</h1>
-<p>SEO Expert | WordPress & Shopify Designer | Ecommerce Specialist</p>
-<br>
-<a href="https://www.linkedin.com/in/muhammad-sajid-seo-expert-wordpress-and-shopify-designer/" target="_blank">
-<button>View LinkedIn</button>
-</a>
-</header>
+<nav>
+<div><b>Sajid</b></div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-<section>
+<div class="hero">
+<div>
+<img src="profile.png">
+<h1>Muhammad Sajid</h1>
+<p>SEO Expert • WordPress Developer • Shopify Designer</p>
+<a class="btn" href="resume.pdf" download>Download Resume</a>
+</div>
+</div>
+
+<section id="about">
 <h2>About Me</h2>
 <div class="card">
-<p>
-I am a professional SEO expert and WordPress Shopify developer with more than 4 years of experience helping businesses grow online. I specialize in search engine optimization ecommerce development and conversion focused website design. Since 2021 I have been working professionally in the industry delivering high quality websites and digital growth strategies.
-</p>
+I am an experienced SEO specialist and web developer with over four years of professional experience helping businesses grow online. I specialize in WordPress development Shopify stores technical SEO optimization and ecommerce growth strategies.
 </div>
 </section>
 
-<section>
-<h2>Experience</h2>
-<div class="card">
-<h3>Trislogic — SEO & Web Expert</h3>
-<p>2021 – Present</p>
-<p>
-Working as an ecommerce specialist and web developer managing SEO campaigns building websites and improving search rankings for international clients.
-</p>
-</div>
-
-<div class="card">
-<h3>WordPress Developer — Azonix Technologies</h3>
-<p>Jan 2021 – Mar 2021</p>
-</div>
-
-<div class="card">
-<h3>WordPress Developer — Al Shifa Healing</h3>
-<p>Nov 2020 – Jan 2021</p>
-</div>
-</section>
-
-<section>
+<section id="skills">
 <h2>Skills</h2>
 <div class="card skills">
+<span>WordPress</span>
+<span>Shopify</span>
 <span>Technical SEO</span>
 <span>On Page SEO</span>
 <span>Off Page SEO</span>
-<span>WordPress</span>
-<span>Shopify</span>
 <span>Keyword Research</span>
-<span>Ecommerce</span>
-<span>Figma to Elementor</span>
 <span>Google Analytics</span>
 <span>Ahrefs</span>
 <span>Semrush</span>
+<span>Elementor</span>
 </div>
 </section>
 
-<section>
+<section id="projects">
 <h2>Projects</h2>
-<div class="card projects">
-<a href="https://trislogic.com/" target="_blank">Trislogic</a>
-<a href="https://www.perfumeelegance.ca/" target="_blank">Perfume Elegance</a>
-<a href="https://trisbro.pk/" target="_blank">Trisbro Pakistan</a>
-<a href="https://smartechlive.ca/" target="_blank">Smartech Live</a>
-<a href="https://toysmart.pk/" target="_blank">Toysmart</a>
-<a href="https://ishiptransport.com/" target="_blank">iShip Transport</a>
-<a href="https://cozyvendre.com/" target="_blank">Cozyvendre</a>
-<a href="https://zayrazstyle.com/" target="_blank">Zayraz Style</a>
-<a href="https://zayrazsolutions.com/" target="_blank">Zayraz Solutions</a>
-<a href="https://zayrazcare.com/" target="_blank">Zayraz Care</a>
-<a href="https://zayraz.pk/" target="_blank">Zayraz</a>
-<a href="https://smartechcom.com/" target="_blank">Smartech Shopify</a>
-<a href="https://perfumesfragrance.com/" target="_blank">Perfumes Fragrance</a>
-<a href="https://trisbro.com/" target="_blank">Trisbro Shopify</a>
-<a href="https://www.alarabperfume.com/" target="_blank">Al Arab Perfume</a>
+
+<div class="grid">
+
+<div class="project"><a href="https://trislogic.com/" target="_blank">Trislogic</a></div>
+<div class="project"><a href="https://www.perfumeelegance.ca/" target="_blank">Perfume Elegance</a></div>
+<div class="project"><a href="https://ishiptransport.com/" target="_blank">iShip Transport</a></div>
+<div class="project"><a href="https://smartechlive.ca/" target="_blank">Smartech Live</a></div>
+<div class="project"><a href="https://cozyvendre.com/" target="_blank">Cozyvendre</a></div>
+<div class="project"><a href="https://zayraz.pk/" target="_blank">Zayraz</a></div>
+<div class="project"><a href="https://smartechcom.com/" target="_blank">Smartech Shopify</a></div>
+<div class="project"><a href="https://trisbro.com/" target="_blank">Trisbro Shopify</a></div>
+
 </div>
 </section>
 
-<section>
-<h2>Education</h2>
-<div class="card">
-<p><strong>BS Computer Science</strong></p>
-<p>NCBA&E University</p>
-<p>2016 – 2020 | CGPA 3.29</p>
-</div>
-</section>
-
-<section>
+<section id="contact">
 <h2>Contact</h2>
 <div class="card">
 <p>Email: sajidsheikh391@gmail.com</p>
 <p>Phone: +92 304 9183297</p>
 <p>Location: Lahore Pakistan</p>
+<p><a href="https://www.linkedin.com/in/muhammad-sajid-seo-expert-wordpress-and-shopify-designer/" target="_blank">LinkedIn Profile</a></p>
 </div>
 </section>
 
 <footer>
-© 2026 Muhammad Sajid | Portfolio
+© 2026 Muhammad Sajid — Portfolio
 </footer>
 
 </body>
