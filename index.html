@@ -61,15 +61,21 @@ border-radius:8px;
 color:black;
 text-decoration:none;
 font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0ea5e9;
 }
 
 section{
-padding:80px 10%;
+padding:100px 10%;
 }
 
 h2{
 color:#38bdf8;
-margin-bottom:20px;
+margin-bottom:10px;
+font-size:32px;
 }
 
 .card{
@@ -90,27 +96,61 @@ display:inline-block;
 font-weight:bold;
 }
 
-.grid{
+/* ===== PROJECT SECTION ===== */
+
+.projects-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin-top:40px;
 }
 
-.project{
+.project-card{
 background:#020617;
+border-radius:18px;
+overflow:hidden;
+transition:.4s;
+box-shadow:0 0 30px rgba(0,0,0,.5);
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.project-content{
 padding:20px;
-border-radius:14px;
+}
+
+.project-content h3{
+margin:10px 0;
+color:#38bdf8;
+}
+
+.project-content p{
+opacity:.7;
+font-size:14px;
+margin-bottom:15px;
+}
+
+.project-btn{
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
 transition:.3s;
 }
 
-.project:hover{
-transform:translateY(-8px);
-}
-
-.project a{
-color:#7dd3fc;
-text-decoration:none;
-font-weight:bold;
+.project-btn:hover{
+background:#0ea5e9;
 }
 
 footer{
@@ -146,7 +186,7 @@ opacity:.7;
 <section id="about">
 <h2>About Me</h2>
 <div class="card">
-I am an experienced SEO specialist and web developer with over four years of professional experience helping businesses grow online. I specialize in WordPress development Shopify stores technical SEO optimization and ecommerce growth strategies.
+I am an experienced SEO specialist and web developer with over four years of professional experience helping businesses grow online. I specialize in WordPress development, Shopify stores, technical SEO optimization and ecommerce growth strategies.
 </div>
 </section>
 
@@ -167,20 +207,62 @@ I am an experienced SEO specialist and web developer with over four years of pro
 </section>
 
 <section id="projects">
-<h2>Projects</h2>
+<h2>My Projects</h2>
+<p style="opacity:.7;">These projects represent my development and ecommerce work.</p>
 
-<div class="grid">
+<div class="projects-grid">
 
-<div class="project"><a href="https://trislogic.com/" target="_blank">Trislogic</a></div>
-<div class="project"><a href="https://www.perfumeelegance.ca/" target="_blank">Perfume Elegance</a></div>
-<div class="project"><a href="https://ishiptransport.com/" target="_blank">iShip Transport</a></div>
-<div class="project"><a href="https://smartechlive.ca/" target="_blank">Smartech Live</a></div>
-<div class="project"><a href="https://cozyvendre.com/" target="_blank">Cozyvendre</a></div>
-<div class="project"><a href="https://zayraz.pk/" target="_blank">Zayraz</a></div>
-<div class="project"><a href="https://smartechcom.com/" target="_blank">Smartech Shopify</a></div>
-<div class="project"><a href="https://trisbro.com/" target="_blank">Trisbro Shopify</a></div>
+<div class="project-card">
+<img src="images/projects/almurid.png">
+<div class="project-content">
+<h3>Al Mawrid Australia</h3>
+<p>WordPress responsive website with modern UI.</p>
+<a href="#" target="_blank" class="project-btn">Visit Website</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="images/projects/mykjackets.png">
+<div class="project-content">
+<h3>MYK Jackets</h3>
+<p>Shopify fashion ecommerce store.</p>
+<a href="#" target="_blank" class="project-btn">Visit Website</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="images/projects/perfumeelegance.png">
+<div class="project-content">
+<h3>Perfume Elegance</h3>
+<p>WooCommerce perfume ecommerce store.</p>
+<a href="https://www.perfumeelegance.ca/" target="_blank" class="project-btn">Visit Website</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="images/projects/zayrazcare.png">
+<div class="project-content">
+<h3>Zayraz Care</h3>
+<p>Medical ecommerce WordPress store.</p>
+<a href="https://zayraz.pk/" target="_blank" class="project-btn">Visit Website</a>
+</div>
+</div>
+
+<div class="project-card">
+<img src="images/projects/zayrazstyle.png">
+<div class="project-content">
+<h3>Zayraz Style</h3>
+<p>Beauty & fashion ecommerce website.</p>
+<a href="https://zayraz.pk/" target="_blank" class="project-btn">Visit Website</a>
+</div>
+</div>
 
 </div>
+
+<div style="text-align:center;margin-top:60px;">
+<a href="projects.html" class="btn">View All Projects</a>
+</div>
+
 </section>
 
 <section id="contact">
@@ -188,8 +270,8 @@ I am an experienced SEO specialist and web developer with over four years of pro
 <div class="card">
 <p>Email: sajidsheikh391@gmail.com</p>
 <p>Phone: +92 304 9183297</p>
-<p>Location: Lahore Pakistan</p>
-<p><a href="https://www.linkedin.com/in/muhammad-sajid-seo-expert-wordpress-and-shopify-designer/" target="_blank">LinkedIn Profile</a></p>
+<p>Location: Lahore, Pakistan</p>
+<p><a href="https://www.linkedin.com/in/muhammad-sajid-seo-expert-wordpress-and-shopify-designer/" target="_blank" style="color:#38bdf8;">LinkedIn Profile</a></p>
 </div>
 </section>
 
